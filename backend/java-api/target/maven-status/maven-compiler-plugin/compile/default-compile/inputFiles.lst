@@ -1,0 +1,11 @@
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\config\CorsConfig.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\controller\ClienteController.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\repository\ClienteRepository.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\service\ClienteService.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\config\ConexionBD.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\controller\UsuarioController.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\model\Usuario.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\service\UsuarioService.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\model\Cliente.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\MidolcevalenApplication.java
+C:\xampp\htdocs\midolcevalen\backend\java-api\src\main\java\com\midolcevalen\repository\UsuarioRepository.java
