@@ -17,7 +17,7 @@ function EditarCliente() {
 
   const [guardando, setGuardando] = useState(false);
 
-  // 🔥 Cargar cliente
+  // Cargar cliente
   useEffect(() => {
   if (id) {
     cargarCliente();
@@ -32,7 +32,7 @@ function EditarCliente() {
   console.log("CLIENTES BACKEND:", data);
 
   const clienteEncontrado = data.find(
-    (c) => String(c.idCliente) === String(id)
+    (c) => String(c.id_Cliente) === String(id)
   );
 
   if (!clienteEncontrado) {

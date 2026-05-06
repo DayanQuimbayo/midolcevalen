@@ -1,13 +1,13 @@
-# Mi Dolce Valen 🍰
+# Mi Dolce Valen
 
 Sistema web para la gestión de clientes.
 
-## 🚀 Tecnologías usadas
+## Tecnologías usadas
 - Frontend: React (Vite)
 - Backend: Java Spring Boot
 - Base de datos: MySQL
 
-## ⚙️ Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 
 ### 1. Iniciar base de datos
 - Abrir XAMPP
@@ -29,5 +29,5 @@ Sistema web para la gestión de clientes.
 - Editar cliente
 - Eliminar cliente
 
-## 📸 Evidencias
+## Evidencias
 (Espacio para capturas)

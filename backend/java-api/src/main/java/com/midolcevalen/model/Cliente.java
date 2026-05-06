@@ -4,13 +4,14 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
 
+
 @Entity
 @Table(name = "clientes")
 public class Cliente {
 
     @Id
     @Column(name = "id_cliente")
-    private Integer idCliente;
+    private Integer id_cliente;
 
     private String nombre;
     private String correo;
@@ -19,13 +20,13 @@ public class Cliente {
 
     public Cliente() {}
 
-    
-    public Integer getIdCliente() {
-        return idCliente;
+    // ✅ GET Y SET CORRECTOS
+    public Integer getId_cliente() {
+        return id_cliente;
     }
 
-    public void setIdCliente(Integer idCliente) {
-        this.idCliente = idCliente;
+    public void setId_cliente(Integer id_cliente) {
+        this.id_cliente = id_cliente;
     }
 
     public String getNombre() {
@@ -58,5 +59,5 @@ public class Cliente {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
+  }
 }
