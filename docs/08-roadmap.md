@@ -1,0 +1,6 @@
+- Login de usuarios
+- Seguridad JWT
+- Panel de administración
+- Deploy en Railway
+- Frontend en Vercel
+- App móvil
