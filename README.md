@@ -1,33 +1,28 @@
 # Mi Dolce Valen
 
-Sistema web para la gestión de clientes.
+Sistema de gestión de clientes para emprendimiento artesanal.
 
-## Tecnologías usadas
-- Frontend: React (Vite)
+##  Tecnologías usadas
+- Frontend: React + Vite + Tailwind
 - Backend: Java Spring Boot
-- Base de datos: MySQL
+- Base de datos: MySQL (XAMPP)
 
-## Cómo ejecutar el proyecto
+##  Funcionalidades
+- Crear clientes
+- Listar clientes
+- Editar clientes
+- Eliminar clientes
 
-### 1. Iniciar base de datos
-- Abrir XAMPP
-- Iniciar Apache y MySQL
+##  Arquitectura
+Frontend → API REST → Backend → Base de datos
 
-### 2. Ejecutar Backend
-- Ir a carpeta backend/java-api
+##  Cómo ejecutar el proyecto
+
+### Backend
+- Iniciar XAMPP (MySQL)
 - Ejecutar Spring Boot
 
-### 3. Ejecutar Frontend
-- Ir a carpeta frontend
-- Ejecutar:
-  npm install
-  npm run dev
-
-## 🧪 Funcionalidades
-- Crear cliente
-- Listar clientes
-- Editar cliente
-- Eliminar cliente
-
-## Evidencias
-(Espacio para capturas)
+### Frontend
+```bash
+npm install
+npm run dev
