@@ -29,9 +29,9 @@ Te lo digo claro y directo:
 
 ---
 
-## 📅 Fecha: 06/05/2026
+##  Fecha: 06/05/2026
 
-### 🧩 Actividades realizadas
+### Actividades realizadas
 - Corrección de errores en conexión frontend-backend
 - Ajuste del campo id_cliente para mantener consistencia con la base de datos
 - Implementación funcional de edición de clientes
@@ -41,27 +41,63 @@ Te lo digo claro y directo:
 - Corrección de errores 500 del backend
 - Organización del proyecto y limpieza de archivos innecesarios
 
-### ⚠️ Problemas encontrados
+### Problemas encontrados
 - Inconsistencia entre idCliente e id_cliente
 - Error 500 en backend al guardar clientes
 - Problemas de rutas en React Router (id undefined)
 - Error de exportaciones en clienteService
 - Problemas de CORS
 
-### ✅ Soluciones aplicadas
+### Soluciones aplicadas
 - Se unificó el uso de id_cliente en todo el proyecto
 - Se corrigieron métodos en el backend (ClienteController y Cliente.java)
 - Se ajustaron rutas dinámicas en React
 - Se corrigieron funciones exportadas en servicios
 - Se validaron datos antes de enviar al backend
 
-### 🚀 Estado actual del proyecto
+### Estado actual del proyecto
 ✔ CRUD de clientes funcionando  
 ✔ Conexión frontend-backend estable  
 ✔ Edición de clientes funcional  
 ✔ Validaciones activas  
 
-### 🔜 Próximos pasos
+### Próximos pasos
 - Implementar módulo de productos
 - Mejorar diseño visual (UI/UX)
 - Preparar despliegue (Docker, Vercel, Railway)
+
+# 15 Mayo 2026
+
+## Avances realizados
+
+- Corrección del CRUD de clientes.
+- Corrección de visualización de ID cliente.
+- Corrección de edición de clientes.
+- Corrección de eliminación de clientes.
+- Implementación de configuración global CORS en Spring Boot.
+- Limpieza y reorganización del ClienteController.
+- Validaciones básicas en frontend.
+- Verificación de conexión React + Spring Boot + MySQL.
+- Pruebas funcionales exitosas de:
+  - listar clientes
+  - crear clientes
+  - editar clientes
+  - eliminar clientes
+
+## Problemas encontrados
+
+- Conflictos entre idCliente e id_cliente.
+- Error CORS bloqueando peticiones DELETE y GET.
+- Métodos incompatibles en ClienteController.
+- Configuración inconsistente entre Repository y Service.
+
+## Solución aplicada
+
+- Configuración global de CORS mediante CorsConfig.java.
+- Estandarización de id_cliente en frontend y backend.
+- Limpieza completa del controlador ClienteController.
+- Reinicio y pruebas completas del backend.
+
+## Estado actual
+
+CRUD de clientes funcionando correctamente.
