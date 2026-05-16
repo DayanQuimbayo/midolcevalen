@@ -4,8 +4,11 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
 
 export default function ListaClientes() {
+
   // Estado donde guardamos los clientes
   const [clientes, setClientes] = useState([]);
+
+  const [busqueda, setBusqueda] = useState("");
 
   // Para navegar entre páginas
   const navigate = useNavigate();
@@ -24,6 +27,12 @@ export default function ListaClientes() {
       console.error("Error al cargar clientes:", error);
     }
   };
+
+    const clientesFiltrados = clientes.filter((cli) =>
+    cli.nombre?.toLowerCase().includes(busqueda.toLowerCase()) ||
+    cli.correo?.toLowerCase().includes(busqueda.toLowerCase()) ||
+    cli.celular?.includes(busqueda)
+  );
 
   // Función para eliminar cliente
   const handleEliminar = async (id) => {
@@ -52,10 +61,20 @@ export default function ListaClientes() {
 
         {/* BOTÓN CREAR */}
         <button
-          onClick={() => navigate("/crear")}
+          onClick={() => navigate("/nuevo-cliente")}
           className="bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
           + Nuevo Cliente
         </button>
+
+        <div className="mb-4">
+
+        <input
+          type="text"
+          placeholder="Buscar cliente por nombre, correo o celular..."
+          value={busqueda}
+          onChange={(e) => setBusqueda(e.target.value)}
+          className="w-full p-3 border rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-400"/>
+         </div>
 
         {/* TABLA */}
         <table className="w-full mt-6 border rounded-lg overflow-hidden shadow-md">
@@ -72,7 +91,7 @@ export default function ListaClientes() {
 
           <tbody>
             {clientes.length > 0 ? (
-              clientes.map((cli) => (
+              clientesFiltrados.map((cli) => (
                 <tr
                   key={`${cli.id_cliente}-${cli.nombre}`}
                   className="border-t hover:bg-pink-50">

@@ -101,3 +101,23 @@ Te lo digo claro y directo:
 ## Estado actual
 
 CRUD de clientes funcionando correctamente.
+
+# Avances CRUD clientes
+
+## Correcciones realizadas
+
+- Corrección de conflicto entre idCliente e id_cliente.
+- Corrección de formulario Home.jsx.
+- Corrección de inputs controlados React.
+- Corrección de validaciones del formulario.
+- Corrección de registro de clientes.
+- Corrección de edición de clientes.
+- Corrección de eliminación de clientes.
+- Verificación completa del CRUD.
+
+## Resultado
+
+CRUD funcionando correctamente con:
+- React
+- Spring Boot
+- MySQL
