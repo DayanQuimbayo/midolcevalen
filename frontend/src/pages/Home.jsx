@@ -48,7 +48,7 @@ function Home() {
     e.preventDefault();
 
     // ✅ VALIDACIONES
-    if (!cliente.idCliente.trim()) {
+    if (!cliente.id_cliente.trim()) {
       alert("La cédula es obligatoria ❌");
       return;
     }
@@ -97,7 +97,7 @@ function Home() {
 
       // limpiar formulario
       setCliente({
-        idCliente: "",
+        id_cliente: "",
         nombre: "",
         correo: "",
         celular: "",
@@ -160,9 +160,9 @@ function Home() {
         <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-3">
 
           <input
-            name="idCliente"
+            name="id_cliente"
             placeholder="Cédula"
-            value={cliente.idCliente}
+            value={cliente.id_cliente}
             onChange={handleChange}
             className="w-full p-2 border rounded"
           />
