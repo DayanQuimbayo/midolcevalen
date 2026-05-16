@@ -1,41 +1,45 @@
 package com.midolcevalen.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
+
 import com.midolcevalen.model.Cliente;
-import com.midolcevalen.service.ClienteService;
 import com.midolcevalen.repository.ClienteRepository;
 
-@CrossOrigin(origins = "http://localhost:5173")
 @RestController
-@RequestMapping("/clientes")
 public class ClienteController {
-
-    @Autowired
-    private ClienteService clienteService;
 
     @Autowired
     private ClienteRepository clienteRepository;
 
-    @PostMapping
-    public Cliente guardarCliente(@RequestBody Cliente cliente) {
-        return clienteService.guardar(cliente);
-    }
-
-    @GetMapping
+    // LISTAR CLIENTES
+    @GetMapping("/clientes")
     public List<Cliente> listarClientes() {
-        return clienteService.listar();
+        return clienteRepository.findAll();
     }
 
+    // GUARDAR CLIENTE
+    @PostMapping("/clientes")
+    public Cliente guardarCliente(@RequestBody Cliente cliente) {
+        return clienteRepository.save(cliente);
+    }
+
+    // ELIMINAR CLIENTE
     @DeleteMapping("/clientes/{id}")
     public void eliminarCliente(@PathVariable Integer id) {
-    clienteRepository.deleteById(id);
+        clienteRepository.deleteById(id);
     }
 
-    @PutMapping("/{id}")
-    public Cliente actualizarCliente(@PathVariable Integer id, @RequestBody Cliente cliente) {
-    cliente.setId_cliente(id);
-    return clienteRepository.save(cliente);
+    // ACTUALIZAR CLIENTE
+    @PutMapping("/clientes/{id}")
+    public Cliente actualizarCliente(
+            @PathVariable Integer id,
+            @RequestBody Cliente cliente) {
+
+        cliente.setId_cliente(id);
+
+        return clienteRepository.save(cliente);
     }
 }

@@ -11,7 +11,7 @@ function Home() {
 
   // 🔹 ESTADO FORMULARIO
   const [cliente, setCliente] = useState({
-    idCliente: "",
+    id_cliente: "",
     nombre: "",
     correo: "",
     celular: "",
@@ -82,7 +82,7 @@ function Home() {
     try {
       // 🔥 IMPORTANTE → respetar id_cliente
       const clienteEnviar = {
-        id_cliente: parseInt(cliente.idCliente),
+        id_cliente: parseInt(cliente.id_cliente),
         nombre: cliente.nombre,
         correo: cliente.correo,
         celular: cliente.celular,

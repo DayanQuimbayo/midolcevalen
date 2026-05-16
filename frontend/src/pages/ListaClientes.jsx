@@ -34,7 +34,8 @@ export default function ListaClientes() {
   try {
     await eliminarCliente(id);
     alert("Cliente eliminado correctamente 🗑️");
-    cargarClientes();
+    cargarClientes(); // RECARGA LA TABLA
+
   } catch (error) {
     console.error(error);
     alert("Error al eliminar cliente ❌");
@@ -73,9 +74,9 @@ export default function ListaClientes() {
             {clientes.length > 0 ? (
               clientes.map((cli) => (
                 <tr
-                  key={`${cli.idCliente}-${cli.nombre}`}
+                  key={`${cli.id_cliente}-${cli.nombre}`}
                   className="border-t hover:bg-pink-50">
-                  <td className="p-3">{cli.idCliente}</td>
+                  <td className="p-3">{cli.id_cliente}</td>
                   <td className="p-3">{cli.nombre}</td>
                   <td className="p-3">{cli.correo}</td>
                   <td className="p-3">{cli.celular}</td>
@@ -83,13 +84,13 @@ export default function ListaClientes() {
 
                   <td className="p-3 flex gap-2 justify-center">
                     <button
-                      onClick={() => navigate(`/editar/${cli.idCliente}`)}
+                      onClick={() => navigate(`/editar/${cli.id_cliente}`)}
                       className="bg-yellow-400 px-3 py-1 rounded hover:bg-yellow-500">
                       Editar
                     </button>
 
                     <button
-                      onClick={() => handleEliminar(cli.idCliente)}
+                      onClick={() => handleEliminar(cli.id_cliente)}
                       className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
                       Eliminar
                     </button>

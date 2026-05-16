@@ -20,7 +20,7 @@ public class Cliente {
 
     public Cliente() {}
 
-    // ✅ GET Y SET CORRECTOS
+    // GET Y SET
     public Integer getId_cliente() {
         return id_cliente;
     }

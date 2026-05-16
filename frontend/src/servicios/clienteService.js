@@ -32,7 +32,7 @@ export const obtenerClientes = async () => {
 
 export const eliminarCliente = async (id) => {
   try {
-    const res = await fetch(`http://localhost:8080/clientes/${id}`, {
+    const res = await fetch(`${API_URL}/${id}`, {
       method: "DELETE",
     });
 

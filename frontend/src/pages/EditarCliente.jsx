@@ -32,7 +32,7 @@ function EditarCliente() {
   console.log("CLIENTES BACKEND:", data);
 
   const clienteEncontrado = data.find(
-    (c) => String(c.id_Cliente) === String(id)
+    (c) => String(c.id_cliente) === String(id)
   );
 
   if (!clienteEncontrado) {
