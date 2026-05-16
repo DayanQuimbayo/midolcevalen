@@ -1,19 +1,19 @@
-# 📓 SOBRE LA BITÁCORA (ESTO ES MUY IMPORTANTE)
+# SOBRE LA BITÁCORA (ESTO ES MUY IMPORTANTE)
 
 Te lo digo claro y directo:
 
-👉 **NO se borra nada**
-👉 **NO se sobreescribe**
-👉 **SIEMPRE se agrega hacia abajo**
+**NO se borra nada**
+**NO se sobreescribe**
+**SIEMPRE se agrega hacia abajo**
 
 ---
 
-## ✅ FORMA CORRECTA
+## FORMA CORRECTA
 
 ```md
 # Bitácora del proyecto
 
-## 📅 23 Abril 2026
+## 23 Abril 2026
 
 - Se corrigió error en backend (Cliente.java)
 - Se implementó editar cliente
@@ -21,7 +21,7 @@ Te lo digo claro y directo:
 
 ---
 
-## 📅 24 Abril 2026
+## 24 Abril 2026
 
 - Se organizó estructura del proyecto
 - Se creó carpeta docs
@@ -121,3 +121,46 @@ CRUD funcionando correctamente con:
 - React
 - Spring Boot
 - MySQL
+
+# Fecha: 16 de mayo de 2026
+
+Actividades realizadas
+Se reorganizó la estructura del frontend.
+Se separó el formulario de registro de clientes del Home principal.
+Se creó la página independiente NuevoCliente.jsx.
+Se configuraron correctamente las rutas con React Router.
+Se corrigieron errores relacionados con rutas inexistentes.
+Se validó el funcionamiento completo del CRUD de clientes.
+Se verificó el guardado correcto en base de datos.
+Se corrigieron errores de identificación relacionados con id_cliente.
+Se validó la funcionalidad de edición y eliminación de clientes.
+Se realizaron pruebas funcionales del frontend y backend.
+Resultado
+
+El módulo de clientes quedó funcionando correctamente con:
+
+registro
+visualización
+edición
+eliminación
+búsqueda
+
+además de una mejor organización del proyecto frontend.
+
+## Seguridad y Login
+
+Se implementó el inicio de sesión conectado con Spring Boot y MySQL.
+
+Avances:
+- Creación de entidad Usuario
+- Conexión de login con backend
+- Validación de credenciales
+- Manejo de errores de autenticación
+- Preparación de rutas privadas
+- Inicio de gestión de sesión con localStorage
+
+Pendiente:
+- Panel administrador
+- Protección de rutas
+- Cierre de sesión
+- JWT

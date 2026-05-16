@@ -1,8 +1,9 @@
 com\midolcevalen\config\CorsConfig.class
 com\midolcevalen\model\Cliente.class
+com\midolcevalen\dto\LoginRequest.class
 com\midolcevalen\service\UsuarioService.class
 com\midolcevalen\config\CorsConfig$1.class
-com\midolcevalen\controller\UsuarioController.class
+com\midolcevalen\controller\AuthController.class
 com\midolcevalen\service\ClienteService.class
 com\midolcevalen\MidolcevalenApplication.class
 com\midolcevalen\controller\ClienteController.class

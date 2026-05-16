@@ -5,6 +5,8 @@ import Layout from "../components/Layout";
 
 function Login() {
 
+  const navigate = useNavigate();
+
   const [datos, setDatos] = useState({
     correo: "",
     password: ""
@@ -17,32 +19,41 @@ function Login() {
     });
   };
 
-  // Enviar datos al backend
-
   const handleLogin = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      const respuesta = await fetch("http://localhost:8080/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(datos)
-      });
+  try {
 
-      const usuario = await respuesta.json();
+    const respuesta = await fetch("http://localhost:8080/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(datos)
+    });
 
-      if (usuario) {
-        alert("Bienvenido " + usuario.nombre);
-      } else {
-        alert("Credenciales incorrectas");
-      }
+    // 🔥 Leer respuesta como texto primero
+    const texto = await respuesta.text();
 
-    } catch (error) {
-      alert("Error al conectar con el servidor");
-    }
-  };
+    // ❌ Login incorrecto
+    if (!texto) {
+  alert("Contraseña o Usuario Incorrecto ❌");
+  return;
+  }
+
+
+    // ✅ Convertir texto a JSON
+    const usuario = JSON.parse(texto);
+
+    alert("Bienvenido " + usuario.nombre);
+
+  } catch (error) {
+
+    console.error(error);
+
+    alert("Error al conectar con el servidor ❌");
+  }
+};
 
   return (
   <div className="bg-pink-50 min-h-screen flex items-center justify-center">
