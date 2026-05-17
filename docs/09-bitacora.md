@@ -164,3 +164,110 @@ Pendiente:
 - Protección de rutas
 - Cierre de sesión
 - JWT
+
+## 📅 17 Mayo 2026
+
+---
+
+# ✅ Avances Realizados
+
+## 🌸 Módulo Clientes
+
+Se completó exitosamente el CRUD de clientes:
+
+- ✅ Registrar cliente
+- ✅ Listar clientes
+- ✅ Editar clientes
+- ✅ Eliminar clientes
+- ✅ Búsqueda de clientes
+
+---
+
+## 🌸 Organización Frontend
+
+Se reorganizó la estructura del frontend:
+
+- ✅ Se separó el formulario de clientes del Home
+- ✅ Se creó la página:
+  - `NuevoCliente.jsx`
+- ✅ Se configuraron rutas con React Router
+- ✅ Se corrigieron errores de navegación
+
+---
+
+## 🌸 Corrección de Errores
+
+### Backend
+
+Se solucionaron errores relacionados con:
+
+- CORS
+- ResponseEntity
+- UsuarioService
+- Repository
+- Mapeos duplicados `/login`
+- Métodos inexistentes
+- Problemas de compilación Maven
+
+### Frontend
+
+Se solucionaron errores relacionados con:
+
+- JSON.parse()
+- Respuestas vacías del backend
+- Navegación
+- Rutas inexistentes
+- Inputs controlados
+
+---
+
+# 🔐 Sistema de Login
+
+## Backend
+
+Se implementó:
+
+- ✅ Modelo Usuario
+- ✅ Repository UsuarioRepository
+- ✅ UsuarioService
+- ✅ AuthController
+- ✅ Endpoint `/login`
+
+---
+
+## Frontend
+
+Se implementó:
+
+- ✅ Página Login
+- ✅ Validación de credenciales
+- ✅ Manejo de sesión con localStorage
+- ✅ Navegación al panel administrador
+- ✅ Cierre de sesión
+
+---
+
+# 🎨 Mejoras Visuales
+
+## Login
+
+- ✅ Diseño moderno
+- ✅ Colores corporativos
+- ✅ Mejor distribución visual
+- ✅ Sombras y estilos Tailwind
+
+## Panel Administrador
+
+- ✅ Dashboard visual
+- ✅ Tarjetas administrativas
+- ✅ Diseño elegante
+- ✅ Implementación de iconos
+
+---
+
+# ✨ React Icons
+
+Se instaló:
+
+```bash
+npm install react-icons

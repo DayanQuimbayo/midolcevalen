@@ -19,8 +19,8 @@ function Layout({ children }) {
         </div>
 
         <nav className="space-x-4">
-          <Link to="/clientes" className="text-pink-700 hover:text-pink-900 font-medium">
-            Clientes
+          <Link to="/productos" className="text-pink-700 hover:text-pink-900 font-medium">
+            Productos
           </Link>
 
           <Link to="/login" className="text-pink-700 hover:text-pink-900 font-medium">

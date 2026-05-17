@@ -5,6 +5,9 @@ import Login from "./pages/Login";
 import ListaClientes from "./pages/ListaClientes";
 import EditarCliente from "./pages/EditarCliente";
 import NuevoCliente from "./pages/NuevoCliente";
+import Admin from "./pages/Admin";
+import Productos from "./pages/Productos";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -13,9 +16,29 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/clientes" element={<ListaClientes />} />
+        <Route path="/clientes" element={
+            <ProtectedRoute>
+              <ListaClientes />
+            </ProtectedRoute>
+          }
+        />
+
         <Route path="/editar/:id" element={<EditarCliente />} />
-        <Route path="/nuevo-cliente" element={<NuevoCliente />} />
+        <Route path="/nuevocliente" element={
+            <ProtectedRoute>
+              <NuevoCliente />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/productos" element={<Productos />} />
+        <Route path="/admin" element={
+          <ProtectedRoute>
+            <Admin />
+          </ProtectedRoute>
+        }
+      />
 
       </Routes>
     </BrowserRouter>
