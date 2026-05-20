@@ -2,7 +2,12 @@ import { useState } from "react";
 import { crearCliente } from "../servicios/clienteService";
 import Layout from "../components/Layout";
 
+import { useNavigate } from "react-router-dom";
+
+
 function NuevoCliente() {
+
+  const navigate = useNavigate();
 
   // 🔹 ESTADO DEL FORMULARIO
   const [cliente, setCliente] = useState({
@@ -121,6 +126,26 @@ function NuevoCliente() {
           >
             Guardar Cliente
           </button>
+
+          <div className="flex gap-4 mt-4">
+
+          <button
+            type="button"
+            onClick={() => navigate("/clientes")}
+            className="w-full bg-pink-200 text-pink-700 py-2 rounded hover:bg-pink-300"
+          >
+            Ver Clientes
+          </button>
+
+          <button
+            type="button"
+            onClick={() => navigate("/")}
+            className="w-full bg-gray-200 text-gray-700 py-2 rounded hover:bg-gray-300"
+          >
+            Inicio
+          </button>
+
+        </div>
 
         </form>
 

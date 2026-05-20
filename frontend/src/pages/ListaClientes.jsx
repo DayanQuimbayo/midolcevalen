@@ -61,7 +61,7 @@ export default function ListaClientes() {
 
         {/* BOTÓN CREAR */}
         <button
-          onClick={() => navigate("/nuevo-cliente")}
+          onClick={() => navigate("/NuevoCliente")}
           className="bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
           + Nuevo Cliente
         </button>
