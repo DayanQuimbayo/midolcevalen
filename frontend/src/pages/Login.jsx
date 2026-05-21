@@ -50,6 +50,11 @@ function Login() {
         JSON.stringify(usuario)
       );
 
+      localStorage.setItem(
+        "loginTime",
+        Date.now()
+       );
+
       alert("Bienvenido " + usuario.nombre + " 💖");
 
       navigate("/admin");

@@ -165,33 +165,33 @@ Pendiente:
 - Cierre de sesión
 - JWT
 
-## 📅 17 Mayo 2026
+## 17 Mayo 2026
 
 ---
 
-# ✅ Avances Realizados
+# Avances Realizados
 
-## 🌸 Módulo Clientes
+## Módulo Clientes
 
 Se completó exitosamente el CRUD de clientes:
 
-- ✅ Registrar cliente
-- ✅ Listar clientes
-- ✅ Editar clientes
-- ✅ Eliminar clientes
-- ✅ Búsqueda de clientes
+- Registrar cliente
+- Listar clientes
+- Editar clientes
+- Eliminar clientes
+- Búsqueda de clientes
 
 ---
 
-## 🌸 Organización Frontend
+## Organización Frontend
 
 Se reorganizó la estructura del frontend:
 
-- ✅ Se separó el formulario de clientes del Home
-- ✅ Se creó la página:
+- Se separó el formulario de clientes del Home
+- Se creó la página:
   - `NuevoCliente.jsx`
-- ✅ Se configuraron rutas con React Router
-- ✅ Se corrigieron errores de navegación
+- Se configuraron rutas con React Router
+- Se corrigieron errores de navegación
 
 ---
 
@@ -221,17 +221,17 @@ Se solucionaron errores relacionados con:
 
 ---
 
-# 🔐 Sistema de Login
+# Sistema de Login
 
 ## Backend
 
 Se implementó:
 
-- ✅ Modelo Usuario
-- ✅ Repository UsuarioRepository
-- ✅ UsuarioService
-- ✅ AuthController
-- ✅ Endpoint `/login`
+- Modelo Usuario
+- Repository UsuarioRepository
+- UsuarioService
+- AuthController
+- Endpoint `/login`
 
 ---
 
@@ -239,35 +239,81 @@ Se implementó:
 
 Se implementó:
 
-- ✅ Página Login
-- ✅ Validación de credenciales
-- ✅ Manejo de sesión con localStorage
-- ✅ Navegación al panel administrador
-- ✅ Cierre de sesión
+- Página Login
+- Validación de credenciales
+- Manejo de sesión con localStorage
+- Navegación al panel administrador
+- Cierre de sesión
 
 ---
 
-# 🎨 Mejoras Visuales
+# Mejoras Visuales
 
 ## Login
 
-- ✅ Diseño moderno
-- ✅ Colores corporativos
-- ✅ Mejor distribución visual
-- ✅ Sombras y estilos Tailwind
+- Diseño moderno
+- Colores corporativos
+- Mejor distribución visual
+- Sombras y estilos Tailwind
 
 ## Panel Administrador
 
-- ✅ Dashboard visual
-- ✅ Tarjetas administrativas
-- ✅ Diseño elegante
-- ✅ Implementación de iconos
+- Dashboard visual
+- Tarjetas administrativas
+- Diseño elegante
+- Implementación de iconos
 
 ---
 
-# ✨ React Icons
+# React Icons
 
 Se instaló:
 
-```bash
+``bash
 npm install react-icons
+
+# Fecha: 20 mayo 2026
+
+## Actividades realizadas
+
+- Se implementó el sistema de login.
+- Se creó el panel administrativo.
+- Se configuró cierre de sesión.
+- Se protegieron rutas privadas.
+- Se reorganizó navegación del frontend.
+- Se reemplazaron iconos por React Icons.
+- Se agregó sección Contactenos en Home.
+- Se mejoró diseño visual del login.
+- Se mejoró diseño visual del panel administrador.
+- Se realizaron pruebas funcionales del sistema.
+
+## Resultado
+
+El sistema ya cuenta con autenticación básica funcional y panel administrativo protegido.
+
+# Avances 21 Mayo 2026
+
+## Frontend
+- Mejora visual módulo productos
+- Integración React Icons
+- Mejoras visuales Login y Admin
+- Logout funcional
+- Expiración automática de sesión
+- Protección de rutas privadas
+
+## Backend
+- Creación entidad Producto
+- Creación ProductoRepository
+- Creación ProductoService
+- Creación ProductoController
+- API REST productos funcional
+
+## Seguridad
+- LocalStorage controlado
+- ProtectedRoute funcional
+- Logout automático y manual
+
+## Estado actual
+- Endpoint /productos funcionando correctamente
+- Backend conectado a MySQL
+- Preparado para integración React CRUD Productos

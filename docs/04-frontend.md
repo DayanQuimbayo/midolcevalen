@@ -1,6 +1,6 @@
-# 🎨 Frontend - Mi Dolce Valen
+# Frontend - Mi Dolce Valen
 
-## 📌 Descripción
+## Descripción
 
 El frontend del sistema está desarrollado con React utilizando Vite, permitiendo una interfaz moderna, rápida y dinámica para la gestión de clientes del emprendimiento Mi Dolce Valen.
 
@@ -13,7 +13,7 @@ El frontend se encarga de:
 
 ---
 
-## 🏗️ Estructura del Frontend
+## Estructura del Frontend
 
 Ubicación:
 
@@ -28,9 +28,9 @@ Organización:
 
 ---
 
-## 📄 Páginas del sistema
+## Páginas del sistema
 
-### 🏠 Home.jsx
+### Home.jsx
 
 Página principal del sistema.
 
@@ -44,7 +44,7 @@ Conexión:
 
 ---
 
-### 📋 ListaClientes.jsx
+### ListaClientes.jsx
 
 Página donde se visualizan todos los clientes registrados.
 
@@ -59,7 +59,7 @@ Conexión:
 
 ---
 
-### ✏️ EditarCliente.jsx
+### EditarCliente.jsx
 
 Permite modificar la información de un cliente existente.
 
@@ -74,7 +74,7 @@ Conexión:
 
 ---
 
-### 🔐 Login.jsx (básico)
+### Login.jsx (básico)
 
 Página de inicio de sesión (estructura inicial).
 
@@ -83,9 +83,9 @@ Funciones:
 
 ---
 
-## 🧩 Componentes
+## Componentes
 
-### 🧱 Layout.jsx
+### Layout.jsx
 
 Componente base del sistema.
 
@@ -100,7 +100,7 @@ Permite reutilizar la misma estructura en todas las páginas.
 
 ---
 
-## 🔌 Servicios (Conexión con Backend)
+## Servicios (Conexión con Backend)
 
 Ubicación:
 
@@ -118,7 +118,7 @@ http://localhost:8080/clientes
 
 ---
 
-## 🔄 Flujo de funcionamiento
+## Flujo de funcionamiento
 
 Usuario → Interfaz (React) → Servicio (fetch) → Backend → Base de datos
 
@@ -132,11 +132,46 @@ Ejemplo:
 
 ---
 
-## 🚀 Ejecución del Frontend
+## Ejecución del Frontend
 
 Pasos:
 
-```bash
+``bash
 cd frontend
 npm install
 npm run dev
+
+## Nuevos módulos frontend
+
+- Login.jsx
+- Admin.jsx
+- ProtectedRoute.jsx
+- Productos.jsx
+- NuevoCliente.jsx
+
+## Mejoras UI
+
+- Integración React Icons
+- Mejoras visuales login
+- Mejoras panel admin
+- Navegación protegida
+
+# 21 Mayo 2026
+
+# Mejoras Frontend
+
+## Productos.jsx
+- React Icons integrados
+- Cards visuales
+- Mejoras UI
+- Preparación para catálogo dinámico
+
+## Login
+- Logout funcional
+- Persistencia sesión
+- Expiración automática
+
+## Admin
+- Mejora visual
+- React Icons
+- Navegación protegida

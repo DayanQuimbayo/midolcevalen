@@ -15,11 +15,15 @@ function Admin() {
     localStorage.getItem("usuario")
   );
 
+  // Función para cerrar sesion luego de un tiempo
   const cerrarSesion = () => {
 
-    localStorage.removeItem("usuario");
+  localStorage.removeItem("usuario");
 
-    navigate("/login");
+  localStorage.removeItem("loginTime");
+
+  navigate("/login");
+
   };
 
   return (
@@ -120,8 +124,7 @@ function Admin() {
 
             <button
               onClick={cerrarSesion}
-              className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-2xl"
-            >
+              className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg shadow hover:bg-gray-300 transition" >
               Cerrar Sesión
             </button>
 

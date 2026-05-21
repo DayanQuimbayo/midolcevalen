@@ -39,6 +39,18 @@ export default function ListaClientes() {
   const handleEliminar = async (id) => {
   const confirmar = window.confirm("¿Estás segura de eliminar este cliente? 😢");
 
+
+  // Función para cerrar sesion luego de un tiempo 
+  const cerrarSesion = () => {
+
+  localStorage.removeItem("usuario");
+
+  localStorage.removeItem("loginTime");
+
+  navigate("/login");
+
+  };
+
   if (!confirmar) return;
 
   try {
@@ -128,7 +140,7 @@ export default function ListaClientes() {
           </tbody>
         </table>
 
-        <div>
+        <div className="mt-10 text-center">
           <button
             type="button"
             onClick={() => navigate("/")}

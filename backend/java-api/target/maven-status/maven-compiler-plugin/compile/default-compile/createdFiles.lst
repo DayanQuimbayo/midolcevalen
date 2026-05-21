@@ -1,10 +1,14 @@
 com\midolcevalen\config\CorsConfig.class
 com\midolcevalen\model\Cliente.class
+com\midolcevalen\controller\ProductoController.class
 com\midolcevalen\dto\LoginRequest.class
+com\midolcevalen\service\ProductoService.class
 com\midolcevalen\service\UsuarioService.class
 com\midolcevalen\config\CorsConfig$1.class
+com\midolcevalen\repository\ProductoRepository.class
 com\midolcevalen\controller\AuthController.class
 com\midolcevalen\service\ClienteService.class
+com\midolcevalen\model\Producto.class
 com\midolcevalen\MidolcevalenApplication.class
 com\midolcevalen\controller\ClienteController.class
 com\midolcevalen\config\ConexionBD.class

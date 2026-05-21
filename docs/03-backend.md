@@ -22,3 +22,27 @@ Métodos habilitados:
 - POST
 - PUT
 - DELETE
+
+# Avances 21 Mayo 2026
+
+## Módulo Productos Backend
+
+### Archivos creados
+
+- Producto.java
+- ProductoRepository.java
+- ProductoService.java
+- ProductoController.java
+
+## Endpoints disponibles
+
+GET /productos
+POST /productos
+GET /productos/{id}
+DELETE /productos/{id}
+
+## Tecnologías
+- Spring Boot
+- JPA
+- Hibernate
+- MySQL
