@@ -9,7 +9,7 @@ function NuevoCliente() {
 
   const navigate = useNavigate();
 
-  // 🔹 ESTADO DEL FORMULARIO
+  // ESTADO DEL FORMULARIO
   const [cliente, setCliente] = useState({
     id_cliente: "",
     nombre: "",
@@ -18,7 +18,7 @@ function NuevoCliente() {
     direccion: ""
   });
 
-  // 🔹 CAMBIOS EN INPUTS
+  // CAMBIOS EN INPUTS
   const handleChange = (e) => {
     setCliente({
       ...cliente,
@@ -26,7 +26,7 @@ function NuevoCliente() {
     });
   };
 
-  // 🔹 GUARDAR CLIENTE
+  // GUARDAR CLIENTE
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -142,7 +142,7 @@ function NuevoCliente() {
             onClick={() => navigate("/")}
             className="w-full bg-gray-200 text-gray-700 py-2 rounded hover:bg-gray-300"
           >
-            Inicio
+            Cerrar Sesion
           </button>
 
         </div>

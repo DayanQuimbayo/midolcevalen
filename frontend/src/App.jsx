@@ -16,29 +16,30 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/clientes" element={
-            <ProtectedRoute>
+
+        <Route path="/clientes" element={<ProtectedRoute>
               <ListaClientes />
             </ProtectedRoute>
           }
         />
 
         <Route path="/editar/:id" element={<EditarCliente />} />
-        <Route path="/nuevocliente" element={
-            <ProtectedRoute>
+
+        <Route path="/nuevocliente" element={<ProtectedRoute>
               <NuevoCliente />
             </ProtectedRoute>
           }
         />
 
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/productos" element={<Productos />} />
-        <Route path="/admin" element={
-          <ProtectedRoute>
+        <Route path="/admin" element={<ProtectedRoute>
             <Admin />
           </ProtectedRoute>
         }
-      />
+        />
+
+        <Route path="/productos" element={<Productos />} />
+             
+  
 
       </Routes>
     </BrowserRouter>

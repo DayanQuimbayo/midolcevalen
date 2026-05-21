@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { FaHeart } from "react-icons/fa";
 
 function Layout({ children }) {
   return (
@@ -45,9 +46,13 @@ function Layout({ children }) {
       </main>
 
       {/* FOOTER */}
-      <footer className="bg-pink-100 py-4 text-center text-pink-700">
-        © 2025 Mi Dolce Valen
-      </footer>
+      <footer className="bg-white shadow-inner text-center p-4 text-gray-500 text-sm">
+      
+              © 2026 Mi Dolce Valen hecho con{" "}
+              <FaHeart className="inline text-pink-500 mx-1" />
+              amor
+      
+            </footer>
 
     </div>
   );

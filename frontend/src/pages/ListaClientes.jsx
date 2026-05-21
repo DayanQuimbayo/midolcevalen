@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { obtenerClientes, eliminarCliente } from "../servicios/clienteService";
-import { useNavigate } from "react-router-dom";
+import { Routes, useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
+import { FaUsers, FaBoxOpen, FaSignOutAlt } from "react-icons/fa";
 
 export default function ListaClientes() {
 
@@ -55,8 +56,9 @@ export default function ListaClientes() {
       <div className="p-8">
 
         {/* TÍTULO */}
-        <h1 className="text-3xl font-bold text-pink-600 mb-6">
-          💖 Clientes registrados
+        <h1 className="text-3xl font-bold text-pink-600 flex items-center gap-2">
+          <FaUsers />
+          Clientes registrados
         </h1>
 
         {/* BOTÓN CREAR */}
@@ -110,7 +112,7 @@ export default function ListaClientes() {
 
                     <button
                       onClick={() => handleEliminar(cli.id_cliente)}
-                      className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+                      className="bg-rose-600 text-white px-3 py-1 rounded hover:bg-rose-600">
                       Eliminar
                     </button>
                   </td>
@@ -125,6 +127,16 @@ export default function ListaClientes() {
             )}
           </tbody>
         </table>
+
+        <div>
+          <button
+            type="button"
+            onClick={() => navigate("/")}
+            className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg shadow hover:bg-gray-300 transition"
+          >
+            Cerrar Sesión
+          </button>
+        </div>
 
       </div>
     </Layout>

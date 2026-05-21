@@ -5,6 +5,7 @@ import catalogoVelas from "../assets/CatalogoVelasGeneral2026.png";
 import catalogoReposteria from "../assets/CatalogoGeneral.png";
 import catalogoJabones from "../assets/PortadaCatalogojabones2026.png";
 import {FaInstagram,FaFacebook,FaWhatsapp,FaEnvelope} from "react-icons/fa";
+import { GiSparkles } from "react-icons/gi";
 
 function Home() {
 
@@ -30,7 +31,7 @@ function Home() {
       <section id="nosotros" className="p-10 bg-white">
   <div className="max-w-5xl mx-auto text-center">
 
-    <h2 className="text-3xl font-semibold text-rose-600 mb-6">
+    <h2 className="text-3xl font-semibold text-pink-600 mb-6">
       Sobre Nosotros
     </h2>
 
@@ -51,7 +52,7 @@ function Home() {
     <div className="grid md:grid-cols-2 gap-6 text-left mb-10">
 
       <div className="bg-rose-50 p-6 rounded-2xl shadow-sm">
-        <h3 className="text-xl font-semibold text-rose-600 mb-2">Misión</h3>
+        <h3 className="text-xl font-semibold text-pink-600 mb-2">Misión</h3>
         <p className="text-gray-600 text-sm">
           Crear productos artesanales con amor, calidad y propósito, que transmitan 
           bienestar, alegría y un mensaje de fe en cada detalle, brindando experiencias 
@@ -60,7 +61,7 @@ function Home() {
       </div>
 
       <div className="bg-rose-50 p-6 rounded-2xl shadow-sm">
-        <h3 className="text-xl font-semibold text-rose-600 mb-2">Visión</h3>
+        <h3 className="text-xl font-semibold text-pink-600 mb-2">Visión</h3>
         <p className="text-gray-600 text-sm">
           Ser una marca reconocida por inspirar emociones y conectar corazones, 
           llevando nuestros productos a más hogares y convirtiéndonos en una opción 
@@ -73,8 +74,10 @@ function Home() {
     {/* VALORES */}
     <div className="bg-white border border-rose-100 p-6 rounded-2xl shadow-sm">
 
-      <h3 className="text-xl font-semibold text-rose-600 mb-4 text-center">
+      <h3 className="text-3xl font-bold text-pink-600 flex items-center justify-center gap-3 mb-6">
+        <GiSparkles className="text-yellow-400" />
         Nuestros Valores
+        <GiSparkles className="text-yellow-400" />
       </h3>
 
       <div className="grid md:grid-cols-2 gap-4 text-gray-600 text-sm">

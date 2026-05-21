@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 import logo from "../assets/logo.png";
+import { FaHeart } from "react-icons/fa";
 
 function Login() {
 
@@ -173,7 +174,9 @@ function Login() {
       {/* 🌸 FOOTER */}
       <footer className="bg-white shadow-inner text-center p-4 text-gray-500 text-sm">
 
-        © 2026 Mi Dolce Valen · Hecho con amor 💖
+        © 2026 Mi Dolce Valen hecho con{" "}
+        <FaHeart className="inline text-pink-500 mx-1" />
+        amor
 
       </footer>
 
