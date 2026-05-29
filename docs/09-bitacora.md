@@ -1,17 +1,10 @@
-# SOBRE LA BITÁCORA (ESTO ES MUY IMPORTANTE)
-
-Te lo digo claro y directo:
+# BITÁCORA DEL PROYECTO MI DOLCE VALEN ARTE Y FE (ESTO ES MUY IMPORTANTE)
 
 **NO se borra nada**
 **NO se sobreescribe**
 **SIEMPRE se agrega hacia abajo**
 
 ---
-
-## FORMA CORRECTA
-
-```md
-# Bitácora del proyecto
 
 ## 23 Abril 2026
 
@@ -317,3 +310,37 @@ El sistema ya cuenta con autenticación básica funcional y panel administrativo
 - Endpoint /productos funcionando correctamente
 - Backend conectado a MySQL
 - Preparado para integración React CRUD Productos
+
+### Avances 28 de Mayo de 2026
+
+## Módulo trabajado:
+# Productos
+
+# Actividades realizadas:
+
+- Revisión y validación del módulo Productos.
+- Corrección de errores de importación entre carpeta "servicios" y "services".
+- Conexión exitosa entre React, Spring Boot y MySQL para consulta de productos.
+- Visualización del catálogo de productos desde base de datos.
+- Creación de la página NuevoProducto.jsx.
+- Creación de ruta protegida /nuevo-producto.
+- Revisión y ajuste del controlador ProductoController.
+- Implementación del método PUT para actualización de productos.
+- Verificación de arranque correcto de Spring Boot.
+- Planeación del CRUD completo de Productos.
+
+## Lecciones aprendidas:
+
+- Verificar siempre nombres exactos de carpetas y archivos.
+- Reiniciar Spring Boot después de cambios importantes.
+- El navegador únicamente realiza peticiones GET.
+- Las pruebas PUT, POST y DELETE deben hacerse con Postman, Thunder Client o herramientas similares.
+- Es recomendable validar primero Backend antes de conectar React.
+
+## Estado al finalizar:
+
+- Proyecto estable.
+- Backend funcionando.
+- Frontend funcionando.
+- CRUD Productos en desarrollo.
+- Sin errores críticos pendientes.
