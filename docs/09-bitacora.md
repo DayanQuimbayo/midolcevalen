@@ -311,6 +311,7 @@ El sistema ya cuenta con autenticación básica funcional y panel administrativo
 - Backend conectado a MySQL
 - Preparado para integración React CRUD Productos
 
+
 ### Avances 28 de Mayo de 2026
 
 ## Módulo trabajado:
@@ -344,3 +345,55 @@ El sistema ya cuenta con autenticación básica funcional y panel administrativo
 - Frontend funcionando.
 - CRUD Productos en desarrollo.
 - Sin errores críticos pendientes.
+
+## FECHA: 29 de mayo de 2026
+
+### JORNADA DE DESARROLLO
+
+## OBJETIVO:
+Continuar la implementación del módulo de Productos y realizar revisión de errores en frontend.
+
+## ACTIVIDADES REALIZADAS:
+
+- Verificación de funcionamiento del Backend Spring Boot.
+- Verificación de funcionamiento del Frontend React.
+- Validación de conexión Frontend ↔ Backend.
+- Creación del servicio productosService.js.
+- Consumo de API REST de productos desde React.
+- Visualización dinámica de productos registrados en base de datos.
+- Creación de la página NuevoProducto.jsx.
+- Registro de nueva ruta protegida para productos.
+- Inclusión de acceso al módulo desde el panel administrativo.
+- Revisión del CRUD de Productos.
+- Validación de endpoints mediante Postman.
+- Corrección de errores de importación.
+- Corrección de errores de renderizado de tarjetas de productos.
+- Revisión de mensajes de consola del navegador.
+- Corrección del favicon del proyecto.
+- Identificación de advertencia por campos de formulario sin atributos id y name.
+- Eliminación de console.log temporales utilizados para depuración.
+
+### RESULTADOS:
+
+- Backend funcionando correctamente.
+- Frontend funcionando correctamente.
+- CRUD Clientes operativo.
+- Módulo Productos conectado a base de datos.
+- Listado dinámico de productos funcionando.
+- Formulario NuevoProducto creado.
+- Sistema estable para continuar desarrollo.
+
+### INCIDENCIAS DETECTADAS:
+
+- Advertencia de Chrome sobre campos sin id o name.
+- Mensajes provenientes de extensiones del navegador.
+- Sin errores críticos de software.
+
+### ESTADO GENERAL DEL PROYECTO:
+
+## AVANCE ESTIMADO:
+65%
+
+### PRÓXIMO PASO:
+
+- Implementar creación real de productos desde NuevoProducto.jsx y continuar CRUD completo de Productos.
