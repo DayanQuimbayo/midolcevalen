@@ -33,6 +33,7 @@ function NuevoProducto() {
 
           <input
             type="text"
+            id="nombre"
             name="nombre"
             placeholder="Nombre"
             onChange={handleChange}
@@ -40,6 +41,7 @@ function NuevoProducto() {
           />
 
           <textarea
+            id="descripcion"
             name="descripcion"
             placeholder="Descripción"
             onChange={handleChange}
@@ -48,6 +50,7 @@ function NuevoProducto() {
 
           <input
             type="number"
+            id="precio"
             name="precio"
             placeholder="Precio"
             onChange={handleChange}
@@ -56,6 +59,7 @@ function NuevoProducto() {
 
           <input
             type="number"
+            id="stock"
             name="stock"
             placeholder="Stock"
             onChange={handleChange}
@@ -64,6 +68,7 @@ function NuevoProducto() {
 
           <input
             type="text"
+            id="categoria"
             name="categoria"
             placeholder="Categoría"
             onChange={handleChange}

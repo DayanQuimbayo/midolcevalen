@@ -84,6 +84,8 @@ export default function ListaClientes() {
 
         <input
           type="text"
+          id="buscarCliente"
+          name="buscarCliente"
           placeholder="Buscar cliente por nombre, correo o celular..."
           value={busqueda}
           onChange={(e) => setBusqueda(e.target.value)}

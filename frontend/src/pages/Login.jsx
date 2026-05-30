@@ -135,6 +135,7 @@ function Login() {
 
             <input
               type="email"
+              id="correo"
               name="correo"
               placeholder="Correo"
               onChange={handleChange}
@@ -144,6 +145,7 @@ function Login() {
 
             <input
               type="password"
+              id="password"
               name="password"
               placeholder="Contraseña"
               onChange={handleChange}

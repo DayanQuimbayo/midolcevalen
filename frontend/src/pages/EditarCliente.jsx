@@ -27,10 +27,6 @@ function EditarCliente() {
   const cargarCliente = async () => {
   const data = await obtenerClientes();
 
-  console.log("DATA:", data);
-  console.log("ID URL:", id);
-  console.log("CLIENTES BACKEND:", data);
-
   const clienteEncontrado = data.find(
     (c) => String(c.id_cliente) === String(id)
   );
@@ -90,6 +86,7 @@ function EditarCliente() {
         <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
 
           <input
+            id="nombre"
             name="nombre"
             value={cliente?.nombre || ""}
             onChange={handleChange}
@@ -98,6 +95,7 @@ function EditarCliente() {
           />
 
           <input
+            id="correo"
             name="correo"
             value={cliente?.correo || ""}
             onChange={handleChange}
@@ -106,6 +104,7 @@ function EditarCliente() {
           />
 
           <input
+            id="celular"
             name="celular"
             value={cliente?.celular || ""}
             onChange={handleChange}
@@ -114,6 +113,7 @@ function EditarCliente() {
           />
 
           <input
+            id="direccion"
             name="direccion"
             value={cliente?.direccion || ""}
             onChange={handleChange}

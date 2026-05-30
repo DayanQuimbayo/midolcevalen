@@ -40,8 +40,6 @@ function NuevoCliente() {
         direccion: cliente.direccion
       };
 
-      console.log("ENVIANDO:", clienteEnviar);
-
       await crearCliente(clienteEnviar);
 
       alert("Cliente guardado correctamente ✅");
@@ -77,6 +75,7 @@ function NuevoCliente() {
 
           <input
             type="text"
+            id="id_cliente"
             name="id_cliente"
             placeholder="Cédula"
             value={cliente.id_cliente}
@@ -86,6 +85,7 @@ function NuevoCliente() {
 
           <input
             type="text"
+            id="nombre"
             name="nombre"
             placeholder="Nombre"
             value={cliente.nombre}
@@ -95,6 +95,7 @@ function NuevoCliente() {
 
           <input
             type="email"
+            id="correo"
             name="correo"
             placeholder="Correo"
             value={cliente.correo}
@@ -104,6 +105,7 @@ function NuevoCliente() {
 
           <input
             type="text"
+            id="celular"
             name="celular"
             placeholder="Celular"
             value={cliente.celular}
@@ -113,6 +115,7 @@ function NuevoCliente() {
 
           <input
             type="text"
+            id="direccion"
             name="direccion"
             placeholder="Dirección"
             value={cliente.direccion}
@@ -139,12 +142,18 @@ function NuevoCliente() {
 
           <button
             type="button"
-            onClick={() => navigate("/")}
-            className="w-full bg-gray-200 text-gray-700 py-2 rounded hover:bg-gray-300"
-          >
-            Cerrar Sesion
-          </button>
+            onClick={() => {
 
+              localStorage.removeItem("usuario");
+              localStorage.removeItem("loginTime");
+
+              navigate("/");
+
+            }}
+            className="w-full bg-red-400 text-white py-2 rounded hover:bg-red-500"
+          >
+            Cerrar Sesión
+          </button>
         </div>
 
         </form>
